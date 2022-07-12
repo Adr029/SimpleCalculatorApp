@@ -69,7 +69,6 @@ public class Calculator extends AppCompatActivity {
         int number2 = Integer.parseInt(num2);
         int quot = number1 / number2;
         ((TextView)findViewById(R.id.answer)).setText(greeting + ", answer is: " + quot);
-
     }
 
     public void reset (View v){
@@ -86,8 +85,5 @@ public class Calculator extends AppCompatActivity {
         findViewById(R.id.buttonbianx).setEnabled(false);
         ((Button)findViewById(R.id.buttonbianx)).setText("BLUE");
         ((Button)findViewById(R.id.buttonbianx)).setBackgroundColor(Color.parseColor("#0000FF"));
-
-
-
     }
 }
