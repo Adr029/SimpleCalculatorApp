@@ -3,8 +3,10 @@ package com.example.simplecalculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -74,5 +76,18 @@ public class Calculator extends AppCompatActivity {
         ((TextView)findViewById(R.id.firstdigit)).setText("");
         ((TextView)findViewById(R.id.seconddigit)).setText("");
         ((TextView)findViewById(R.id.answer)).setText("");
+        findViewById(R.id.buttonbianx).setEnabled(true);
+        ((Button)findViewById(R.id.buttonbianx)).setText("PINK");
+        ((Button)findViewById(R.id.buttonbianx)).setBackgroundColor(Color.parseColor("#E91E63"));
+    }
+
+    public void disable (View v)
+    {
+        findViewById(R.id.buttonbianx).setEnabled(false);
+        ((Button)findViewById(R.id.buttonbianx)).setText("BLUE");
+        ((Button)findViewById(R.id.buttonbianx)).setBackgroundColor(Color.parseColor("#0000FF"));
+
+
+
     }
 }
