@@ -62,14 +62,14 @@ public class Calculator extends AppCompatActivity {
         ((TextView)findViewById(R.id.answer)).setText("");
         findViewById(R.id.buttonbianx).setEnabled(true);
         ((Button)findViewById(R.id.buttonbianx)).setText("PINK");
-        ((Button)findViewById(R.id.buttonbianx)).setBackgroundColor(Color.parseColor("#E91E63"));
+        ((Button)findViewById(R.id.buttonbianx)).setBackgroundColor(Color.parseColor("#FFA4BD"));
     }
 
     public void disable (View v)
     {
         findViewById(R.id.buttonbianx).setEnabled(false);
         ((Button)findViewById(R.id.buttonbianx)).setText("BLUE");
-        ((Button)findViewById(R.id.buttonbianx)).setBackgroundColor(Color.parseColor("#0000FF"));
+        ((Button)findViewById(R.id.buttonbianx)).setBackgroundColor(Color.parseColor("#ADD8E6"));
     }
 
     public void compute (View v)
