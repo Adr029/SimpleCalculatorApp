@@ -15,13 +15,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("Home");
+
     }
+
     public void nextactivity (View v)
     {
+        final EditText edit_uname = findViewById(R.id.username);
+        DBUser userc = new DBUser();
         String user = ((EditText)findViewById(R.id.username)).getText().toString();
         if (user.length() != 0) {
             Intent abcd = new Intent(this, Calculator.class);
             abcd.putExtra("username", user);
+            UserName name = new UserName(user);
+            userc.add(name);
             startActivity(abcd);
         }
         else

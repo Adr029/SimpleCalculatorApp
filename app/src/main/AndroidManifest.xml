@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.simplecalculator">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -20,8 +22,11 @@
             android:label="Calculator"
             android:parentActivityName=".MainActivity"
             />
+
+
         <activity
             android:name=".MainActivity"
+            android:label="123Calculator"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
